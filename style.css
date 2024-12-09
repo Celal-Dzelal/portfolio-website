@@ -21,6 +21,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 .navbar__logo {
   width: auto;
@@ -53,9 +56,9 @@ body {
 
 .header {
   background-image: url(./img/1.jpg);
-  height: 40vh;
+  height: 70vh;
   background-size: cover;
-  background-position-y: top;
+  background-position: top;
   text-align: center;
   align-content: center;
 }
@@ -97,11 +100,11 @@ body {
 .about {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 20px 20px;
 }
 .about__text {
-  width: 60vw;
+  width: 50vw;
 }
 .about__text p {
   line-height: 1.2;
@@ -110,7 +113,7 @@ body {
   width: 15vw;
 }
 .about__img {
-  width: 30vw;
+  width: 20vw;
   border-radius: 20px;
   border: 2px solid #430602;
 }

@@ -37,7 +37,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  position: sticky;
+  top: 0;
+  z-index: 10;
   &__logo {
     // border: 2px solid orchid;
     width: auto;
@@ -79,9 +81,9 @@ body {
 
 .header {
   background-image: url(./img/1.jpg);
-  height: 40vh;
+  height: 70vh;
   background-size: cover;
-  background-position-y: top;
+  background-position: top;
   text-align: center;
   align-content: center;
 
@@ -131,10 +133,10 @@ body {
 .about {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 20px 20px;
   &__text {
-    width: 60vw;
+    width: 50vw;
 
     p {
       line-height: 1.2;
@@ -146,7 +148,7 @@ body {
     }
   }
   &__img {
-    width: 30vw;
+    width: 20vw;
     border-radius: 20px;
     border: 2px solid $darkRed;
 
