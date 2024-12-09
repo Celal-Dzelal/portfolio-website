@@ -13,6 +13,7 @@ body {
   height: auto;
   margin: 0 auto;
   background-color: #0d0d0d;
+  box-shadow: -5px 5px 10px #430602, 5px 5px 10px #430602;
 }
 
 .navbar {
@@ -78,7 +79,7 @@ body {
   align-content: center;
   text-shadow: 1px 1px 5px #430602;
 }
-.header__button, .about__text button {
+.header__button, .portfolio button, .about__text button {
   background-color: #6b6655;
   color: #ffffff;
   width: 10vw;
@@ -89,11 +90,11 @@ body {
   font-weight: bold;
   font-size: 1rem;
 }
-.header__button:hover, .about__text button:hover {
+.header__button:hover, .portfolio button:hover, .about__text button:hover {
   background-color: #430602;
   box-shadow: 1px 1px 5px #8c2626;
 }
-.header__button:hover:active, .about__text button:hover:active {
+.header__button:hover:active, .portfolio button:hover:active, .about__text button:hover:active {
   transform: scale(0.95);
 }
 
@@ -121,6 +122,42 @@ body {
   object-fit: cover;
   width: 100%;
   border-radius: 20px;
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 5px;
+}
+.portfolio h2 {
+  padding-bottom: 20px;
+}
+.portfolio__boxes {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90%;
+  height: auto;
+  margin-bottom: 20px;
+}
+.portfolio__boxes--box {
+  height: 30vh;
+  flex-wrap: wrap;
+  max-width: 18%;
+  text-align: center;
+  cursor: pointer;
+}
+.portfolio__boxes--box:hover {
+  opacity: 0.7;
+  transform: scale(1.1);
+}
+.portfolio__boxes--box img {
+  object-fit: cover;
+  object-position: top;
+  width: 100%;
+  height: 70%;
 }
 
 /*# sourceMappingURL=style.css.map */

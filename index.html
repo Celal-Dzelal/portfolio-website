@@ -12,20 +12,20 @@
       <nav class="navbar">
         <div class="navbar__logo">SAVIORS</div>
         <ul class="navbar__menu">
-          <li class="navbar__menu--last"><a href="">HOME</a></li>
-          <li class="navbar__menu--last"><a href="">ABOUT ME</a></li>
-          <li class="navbar__menu--last"><a href="">MY WORKS</a></li>
+          <li class="navbar__menu--last"><a href="#home">HOME</a></li>
+          <li class="navbar__menu--last"><a href="#aboutMe">ABOUT ME</a></li>
+          <li class="navbar__menu--last"><a href="#myWorks">MY WORKS</a></li>
           <li class="navbar__menu--last"><a href="">CONTACT</a></li>
         </ul>
       </nav>
       <!--? HEADER -->
-      <header class="header">
+      <header class="header" id="home">
         <h1 class="header__title">I'M <span>NEGAN</span></h1>
         <p class="header__text">Hot Diggety Dog! This Place Is Magnificent!</p>
         <button type="button" class="header__button">Contact</button>
       </header>
       <!--? ABOUT ME -->
-      <div class="about">
+      <div class="about" id="aboutMe">
         <div class="about__text">
           <h2>You should know who I am <br />and what I can do</h2>
           <p>
@@ -38,7 +38,30 @@
           <img src="./img/3.jpg" alt="" width="400px" />
         </div>
       </div>
-      <!--? PROJECTS -->
+      <!--? MY WORKS -->
+      <div class="portfolio" id="myWorks">
+        <h2>MY WORKS</h2>
+        <div class="portfolio__boxes">
+          <div class="portfolio__boxes--box">
+            <img src="./img/mywork.jpg" alt="" />
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div class="portfolio__boxes--box">
+            <img src="./img/mywork2.jpg" alt="" />
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div class="portfolio__boxes--box">
+            <img src="./img/sanctuary.jpg" alt="" />
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div class="portfolio__boxes--box">
+            <img src="./img/saviors.jpg" alt="" />
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <button type="button">More About My Works</button>
+      </div>
+      <!--? CONTACT -->
     </div>
   </body>
 </html>
