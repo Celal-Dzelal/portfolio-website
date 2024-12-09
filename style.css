@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #6b6655;
+  color: #ffffff;
+  font-family: "Special Elite", system-ui;
+}
+
+.container {
+  width: 70vw;
+  height: auto;
+  margin: 0 auto;
+  background-color: #0d0d0d;
+}
+
+.navbar {
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar__logo {
+  width: auto;
+  height: 100%;
+  align-content: center;
+  text-align: center;
+  color: #8c2626;
+  text-shadow: 1px 1px 5px #430602;
+  margin-left: 1.5rem;
+  font-size: 2rem;
+}
+.navbar__menu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1.5rem;
+  margin-right: 1.5rem;
+  list-style-type: none;
+}
+.navbar__menu--last a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.navbar__menu--last a:hover {
+  color: #8c2626;
+}
+.navbar__menu--last a:active {
+  text-shadow: 1px 1px 5px #ffffff;
+}
+
+.header {
+  background-image: url(./img/1.jpg);
+  height: 40vh;
+  background-size: cover;
+  background-position-y: top;
+  text-align: center;
+  align-content: center;
+}
+.header__title {
+  color: #ffffff;
+  text-shadow: 1px 1px 5px #430602;
+  font-size: 2.5rem;
+}
+.header__title span {
+  color: #430602;
+  text-shadow: 1px 1px 5px #ffffff;
+}
+.header__text {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  align-content: center;
+  text-shadow: 1px 1px 5px #430602;
+}
+.header__button, .about__text button {
+  background-color: #6b6655;
+  color: #ffffff;
+  width: 10vw;
+  height: 3vh;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.header__button:hover, .about__text button:hover {
+  background-color: #430602;
+  box-shadow: 1px 1px 5px #8c2626;
+}
+.header__button:hover:active, .about__text button:hover:active {
+  transform: scale(0.95);
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px;
+}
+.about__text {
+  width: 60vw;
+}
+.about__text p {
+  line-height: 1.2;
+}
+.about__text button {
+  width: 15vw;
+}
+.about__img {
+  width: 30vw;
+  border-radius: 20px;
+  border: 2px solid #430602;
+}
+.about__img img {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */
