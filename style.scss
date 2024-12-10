@@ -1,6 +1,7 @@
 //? Fonts
 
 @import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css");
 
 //? VARIABLES
 
@@ -110,7 +111,7 @@ body {
   &__button {
     background-color: $gray;
     color: $white;
-    width: 10vw;
+    min-width: 10vw;
     height: 3vh;
     border: none;
     border-radius: $radius;
@@ -190,6 +191,8 @@ body {
       max-width: 18%;
       text-align: center;
       cursor: pointer;
+      border: 2px solid $lightRed;
+      border-radius: $radius;
 
       &:hover {
         opacity: 0.7;
@@ -197,16 +200,100 @@ body {
       }
 
       img {
+        object-position: center;
         object-fit: cover;
         object-position: top;
-        width: 100%;
-        height: 70%;
+        margin-top: 10px;
+        width: 90%;
+        height: 60%;
+        border-radius: $radius;
+        border: 2px groove $gray;
       }
     }
   }
   button {
     @extend .header__button;
+    min-width: 20vw;
   }
 }
 
 //? CONTACT
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 5px;
+
+  h2 {
+    padding-bottom: 20px;
+  }
+
+  &__table {
+    // border: 2px solid red;
+    min-width: 25vw;
+
+    input {
+      width: 15vw;
+      height: 1.5rem;
+    }
+
+    label {
+      cursor: pointer;
+    }
+
+    textarea {
+      width: 15vw;
+      resize: none;
+      overflow: auto;
+    }
+
+    &--button {
+      text-align: center;
+      height: 4rem;
+
+      button {
+        @extend .header__button;
+      }
+    }
+  }
+}
+
+//? FOOTER
+
+.footer {
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // border: 2px solid red;
+
+  &__logo {
+    @extend .navbar__logo;
+  }
+
+  &__copyright {
+    text-align: center;
+  }
+
+  &__icons {
+    margin-right: 20px;
+    font-size: 2.2rem;
+    a {
+      color: $white;
+      text-decoration: none;
+      padding: 10px;
+
+      i {
+        &:hover {
+          color: $darkRed;
+        }
+        &:active {
+          transform: scale(0.8);
+        }
+      }
+    }
+  }
+}

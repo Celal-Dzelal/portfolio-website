@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css");
 body {
   margin: 0;
   padding: 0;
@@ -26,7 +27,7 @@ body {
   top: 0;
   z-index: 10;
 }
-.navbar__logo {
+.navbar__logo, .footer__logo {
   width: auto;
   height: 100%;
   align-content: center;
@@ -79,10 +80,10 @@ body {
   align-content: center;
   text-shadow: 1px 1px 5px #430602;
 }
-.header__button, .portfolio button, .about__text button {
+.header__button, .contact__table--button button, .portfolio button, .about__text button {
   background-color: #6b6655;
   color: #ffffff;
-  width: 10vw;
+  min-width: 10vw;
   height: 3vh;
   border: none;
   border-radius: 20px;
@@ -90,11 +91,11 @@ body {
   font-weight: bold;
   font-size: 1rem;
 }
-.header__button:hover, .portfolio button:hover, .about__text button:hover {
+.header__button:hover, .contact__table--button button:hover, .portfolio button:hover, .about__text button:hover {
   background-color: #430602;
   box-shadow: 1px 1px 5px #8c2626;
 }
-.header__button:hover:active, .portfolio button:hover:active, .about__text button:hover:active {
+.header__button:hover:active, .contact__table--button button:hover:active, .portfolio button:hover:active, .about__text button:hover:active {
   transform: scale(0.95);
 }
 
@@ -148,16 +149,80 @@ body {
   max-width: 18%;
   text-align: center;
   cursor: pointer;
+  border: 2px solid #8c2626;
+  border-radius: 20px;
 }
 .portfolio__boxes--box:hover {
   opacity: 0.7;
   transform: scale(1.1);
 }
 .portfolio__boxes--box img {
+  object-position: center;
   object-fit: cover;
   object-position: top;
+  margin-top: 10px;
+  width: 90%;
+  height: 60%;
+  border-radius: 20px;
+  border: 2px groove #6b6655;
+}
+.portfolio button {
+  min-width: 20vw;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 5px;
+}
+.contact h2 {
+  padding-bottom: 20px;
+}
+.contact__table {
+  min-width: 25vw;
+}
+.contact__table input {
+  width: 15vw;
+  height: 1.5rem;
+}
+.contact__table label {
+  cursor: pointer;
+}
+.contact__table textarea {
+  width: 15vw;
+  resize: none;
+  overflow: auto;
+}
+.contact__table--button {
+  text-align: center;
+  height: 4rem;
+}
+.footer {
   width: 100%;
-  height: 70%;
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__copyright {
+  text-align: center;
+}
+.footer__icons {
+  margin-right: 20px;
+  font-size: 2.2rem;
+}
+.footer__icons a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px;
+}
+.footer__icons a i:hover {
+  color: #430602;
+}
+.footer__icons a i:active {
+  transform: scale(0.8);
 }
 
 /*# sourceMappingURL=style.css.map */

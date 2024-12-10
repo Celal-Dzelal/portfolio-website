@@ -15,7 +15,7 @@
           <li class="navbar__menu--last"><a href="#home">HOME</a></li>
           <li class="navbar__menu--last"><a href="#aboutMe">ABOUT ME</a></li>
           <li class="navbar__menu--last"><a href="#myWorks">MY WORKS</a></li>
-          <li class="navbar__menu--last"><a href="">CONTACT</a></li>
+          <li class="navbar__menu--last"><a href="#contactMe">CONTACT</a></li>
         </ul>
       </nav>
       <!--? HEADER -->
@@ -62,6 +62,63 @@
         <button type="button">More About My Works</button>
       </div>
       <!--? CONTACT -->
+      <div class="contact" id="contactMe">
+        <h2>CONTACT</h2>
+        <table class="contact__table">
+          <tr>
+            <td><label for="nameSurname">Name - Surname</label></td>
+            <th><input type="text" name="nameSurname" id="nameSurname" /></th>
+          </tr>
+          <tr>
+            <td><label for="phone">Phone Number</label></td>
+            <th>
+              <input
+                type="tel"
+                name="PhoneNumber"
+                id="phone"
+                placeholder="xx-xxx-xxx-xx-xx"
+                pattern="[0-9]{2}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+              />
+            </th>
+          </tr>
+          <tr>
+            <td><label for="mail">E-Mail</label></td>
+            <th>
+              <input
+                type="email"
+                name="E-Mail"
+                id="mail"
+                placeholder="example@email.com"
+              />
+            </th>
+          </tr>
+          <tr>
+            <td><label for="message">Your Message</label></td>
+            <th>
+              <textarea name="" id="message" cols="21" rows="10"></textarea>
+            </th>
+          </tr>
+          <tr>
+            <td class="contact__table--button" colspan="2">
+              <button type="submit">Submit Form</button>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <!--? FOOTER -->
+      <div class="footer">
+        <div class="footer__logo">SAVIORS</div>
+        <div class="footer__copyright">
+          <p>All Rights Reserved &copy; | 2024</p>
+          <p>Designed by Dzelal</p>
+        </div>
+        <div class="footer__icons">
+          <a href=""><i class="fa-brands fa-square-github"></i></a
+          ><a href=""><i class="fa-brands fa-square-x-twitter"></i></a
+          ><a href=""><i class="fa-brands fa-square-instagram"></i></a
+          ><a href=""><i class="fa-brands fa-square-facebook"></i></a>
+        </div>
+      </div>
     </div>
   </body>
 </html>
