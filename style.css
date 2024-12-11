@@ -146,7 +146,7 @@ body {
 .portfolio__boxes--box {
   height: 30vh;
   flex-wrap: wrap;
-  max-width: 18%;
+  width: 18%;
   text-align: center;
   cursor: pointer;
   border: 2px solid #8c2626;
@@ -223,6 +223,141 @@ body {
 }
 .footer__icons a i:active {
   transform: scale(0.8);
+}
+
+@media screen and (min-width: 0px) and (max-width: 575px) {
+  .container {
+    width: 100vw;
+  }
+  .container .navbar {
+    height: auto;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  .container .navbar__logo, .container .footer__logo {
+    padding: 10px 0;
+    margin: 0;
+  }
+  .container .navbar__menu {
+    gap: 1;
+    padding: 0;
+    margin: 0;
+  }
+  .container .navbar__menu--last {
+    font-size: 0.7rem;
+  }
+  .container .header {
+    height: 40vh;
+    padding: 10px 5px;
+  }
+  .container .header__title {
+    font-size: 2rem;
+  }
+  .container .header__text {
+    font-size: 1rem;
+  }
+  .container .header__button, .container .about__text button, .about__text .container button, .container .portfolio button, .portfolio .container button, .container .contact__table--button button, .contact__table--button .container button {
+    font-size: 0.8rem;
+  }
+  .container .about {
+    padding: 10px 5px;
+  }
+  .container .about__text {
+    width: 100%;
+    text-align: center;
+    padding: 10px 5px;
+  }
+  .container .about h2 {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  .container .about__img {
+    display: none;
+  }
+  .container .about button {
+    width: fit-content;
+  }
+  .container .portfolio {
+    flex-wrap: wrap;
+    padding: 10px 5px;
+  }
+  .container .portfolio h2 {
+    margin: 10px auto;
+  }
+  .container .portfolio__boxes {
+    flex-wrap: wrap;
+  }
+  .container .portfolio__boxes--box {
+    width: 100%;
+    margin-top: 3px;
+  }
+  .container .portfolio__boxes--box:hover {
+    opacity: 0.7;
+    transform: scale(0.8);
+  }
+  .container .contact {
+    padding: 10px 5px;
+  }
+  .container .contact h2 {
+    padding-bottom: 10px;
+    margin: 0;
+  }
+  .container .contact__table {
+    width: 100%;
+    text-align: center;
+  }
+  .container .contact__table th {
+    display: block;
+    width: 100%;
+  }
+  .container .contact__table td {
+    display: block;
+    width: 100%;
+  }
+  .container .contact__table input {
+    width: 60%;
+  }
+  .container .contact__table textarea {
+    width: 60%;
+  }
+  .container .footer {
+    height: auto;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  .container .footer__icons {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
+  .container .about {
+    padding: 10px;
+    margin: 0;
+    justify-content: space-around;
+  }
+  .container .about__text {
+    text-align: center;
+  }
+  .container .about__text h2 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  .container .about__text p {
+    text-align: center;
+  }
+  .container .about__text button {
+    width: fit-content;
+  }
+  .container .about__img {
+    width: 40vw;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

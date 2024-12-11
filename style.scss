@@ -13,6 +13,20 @@ $lightRed: #8c2626;
 $textShadow: 1px 1px 5px;
 $radius: 20px;
 
+//? MIXINS
+
+@mixin media-xsm {
+  @media screen and (min-width: 0px) and (max-width: 575px) {
+    @content;
+  }
+}
+
+@mixin media-sm {
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    @content;
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -188,7 +202,7 @@ body {
       // border: 2px solid blue;
       height: 30vh;
       flex-wrap: wrap;
-      max-width: 18%;
+      width: 18%;
       text-align: center;
       cursor: pointer;
       border: 2px solid $lightRed;
@@ -293,6 +307,167 @@ body {
         &:active {
           transform: scale(0.8);
         }
+      }
+    }
+  }
+}
+
+//? MEDIA QUERRY
+
+@include media-xsm {
+  .container {
+    width: 100vw;
+    .navbar {
+      height: auto;
+      flex-direction: column;
+      position: relative;
+      justify-content: center;
+      padding: 10px 0;
+
+      &__logo {
+        padding: 10px 0;
+        margin: 0;
+      }
+      &__menu {
+        gap: 1;
+        padding: 0;
+        margin: 0;
+        &--last {
+          font-size: 0.7rem;
+        }
+      }
+    }
+
+    //? HEADER
+
+    .header {
+      height: 40vh;
+      padding: 10px 5px;
+      &__title {
+        font-size: 2rem;
+      }
+      &__text {
+        font-size: 1rem;
+      }
+      &__button {
+        font-size: 0.8rem;
+      }
+    }
+
+    //? ABOUT
+
+    .about {
+      padding: 10px 5px;
+      &__text {
+        width: 100%;
+        text-align: center;
+        padding: 10px 5px;
+      }
+      h2 {
+        text-align: center;
+        font-size: 1.2rem;
+      }
+      &__img {
+        display: none;
+      }
+
+      button {
+        width: fit-content;
+      }
+    }
+
+    //? MY WORKS
+
+    .portfolio {
+      flex-wrap: wrap;
+      padding: 10px 5px;
+
+      h2 {
+        margin: 10px auto;
+      }
+
+      &__boxes {
+        flex-wrap: wrap;
+
+        &--box {
+          width: 100%;
+          margin-top: 3px;
+          &:hover {
+            opacity: 0.7;
+            transform: scale(0.8);
+          }
+        }
+      }
+    }
+
+    //? CONTACT
+
+    .contact {
+      padding: 10px 5px;
+
+      h2 {
+        padding-bottom: 10px;
+        margin: 0;
+      }
+
+      &__table {
+        width: 100%;
+        text-align: center;
+        th {
+          display: block;
+          width: 100%;
+        }
+        td {
+          display: block;
+          width: 100%;
+        }
+        input {
+          width: 60%;
+        }
+        textarea {
+          width: 60%;
+        }
+      }
+    }
+
+    //? FOOTER
+
+    .footer {
+      height: auto;
+      flex-direction: column;
+      position: relative;
+      justify-content: center;
+      padding: 10px 0;
+      &__icons {
+        margin: 0;
+      }
+    }
+  }
+}
+
+@include media-sm {
+  .container {
+    width: 100%;
+
+    .about {
+      padding: 10px;
+      margin: 0;
+      justify-content: space-around;
+      &__text {
+        text-align: center;
+        h2 {
+          font-size: 1.3rem;
+          text-align: center;
+        }
+        p {
+          text-align: center;
+        }
+        button {
+          width: fit-content;
+        }
+      }
+      &__img {
+        width: 40vw;
       }
     }
   }
