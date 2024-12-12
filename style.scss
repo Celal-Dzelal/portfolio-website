@@ -15,6 +15,12 @@ $radius: 20px;
 
 //? MIXINS
 
+@mixin displayFlex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @mixin media-xsm {
   @media screen and (min-width: 0px) and (max-width: 575px) {
     @content;
@@ -56,9 +62,8 @@ body {
   //   border: 2px solid blue;
   width: 100%;
   height: 8vh;
-  display: flex;
+  @include displayFlex;
   justify-content: space-between;
-  align-items: center;
   position: sticky;
   top: 0;
   z-index: 10;
@@ -66,8 +71,7 @@ body {
     // border: 2px solid orchid;
     width: auto;
     height: 100%;
-    align-content: center;
-    text-align: center;
+    @include displayFlex;
     color: $lightRed;
     text-shadow: $textShadow $darkRed;
     margin-left: 1.5rem;
@@ -75,9 +79,8 @@ body {
   }
 
   &__menu {
-    display: flex;
+    @include displayFlex;
     justify-content: space-evenly;
-    align-items: center;
     gap: 1.5rem;
     margin-right: 3rem;
     list-style-type: none;
@@ -153,9 +156,8 @@ body {
 //? ABOUT
 
 .about {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include displayFlex;
+  justify-content: space-around;
   padding: 20px 20px;
   &__text {
     width: 50vw;
@@ -185,10 +187,8 @@ body {
 //? MY WORKS
 
 .portfolio {
-  display: flex;
+  @include displayFlex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: 20px 5px;
 
   h2 {
@@ -197,9 +197,8 @@ body {
 
   &__boxes {
     // border: 2px solid red;
-    display: flex;
+    @include displayFlex;
     justify-content: space-evenly;
-    align-items: center;
     width: 90%;
     height: auto;
     margin-bottom: 20px;
@@ -240,10 +239,8 @@ body {
 //? CONTACT
 
 .contact {
-  display: flex;
+  @include displayFlex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: 20px 5px;
 
   h2 {
@@ -285,9 +282,8 @@ body {
 .footer {
   width: 100%;
   height: 8vh;
-  display: flex;
+  @include displayFlex;
   justify-content: space-between;
-  align-items: center;
   // border: 2px solid red;
 
   &__logo {
