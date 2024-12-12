@@ -41,7 +41,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
   gap: 1.5rem;
-  margin-right: 1.5rem;
+  margin-right: 3rem;
   list-style-type: none;
 }
 .navbar__menu--last a {
