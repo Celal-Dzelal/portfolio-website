@@ -10,11 +10,10 @@ body {
 }
 
 .container {
-  width: 70vw;
+  width: 100vw;
   height: auto;
   margin: 0 auto;
   background-color: #0d0d0d;
-  box-shadow: -5px 5px 10px #430602, 5px 5px 10px #430602;
 }
 
 .navbar {
@@ -357,6 +356,26 @@ body {
   }
   .container .about__img {
     width: 40vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .about {
+    justify-content: space-around;
+  }
+  .about__img {
+    width: 30vw;
+  }
+  .portfolio__boxes {
+    width: 100vw;
+  }
+  .contact__table {
+    min-width: 40vw;
+  }
+  .contact__table input {
+    width: 20vw;
+  }
+  .contact__table textarea {
+    width: 20vw;
   }
 }
 
