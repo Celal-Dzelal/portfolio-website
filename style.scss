@@ -231,6 +231,7 @@ body {
     }
   }
   button {
+    margin-top: 10px;
     @extend .header__button;
     min-width: 20vw;
   }

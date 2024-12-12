@@ -171,6 +171,7 @@ body {
   border: 2px groove #6b6655;
 }
 .portfolio button {
+  margin-top: 10px;
   min-width: 20vw;
 }
 
